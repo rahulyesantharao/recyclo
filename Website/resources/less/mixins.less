@@ -1,0 +1,25 @@
+.textSelection(@params) {
+	&::selection {
+		background:@params;
+		text-shadow:none;
+	}
+	&::-moz-selection {
+		background:@params;
+		text-shadow:none;
+	}
+}
+
+.Transitions(@params) {
+	-webkit-transition: @params;
+	-moz-transition: @params;
+	-o-transition: @params;
+	transition: @params;
+}
+
+.Transform(@params) {
+	-webkit-transform: @params;
+	-moz-transform: @params;
+	-o-transform: @params;
+	-ms-transform:@params;
+	transform: @params;
+}

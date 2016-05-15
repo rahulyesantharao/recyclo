@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'bigNoodleTitling';
+  src: url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'bigNoodleTitling';
+  src: url('../fonts/big_noodle_titling_oblique.ttf') format('truetype');
+  font-style: oblique;
+}
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('../fonts/AvenirLTStd-Black.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('../fonts/AvenirLTStd-Book.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('../fonts/AvenirLTStd-Light.otf');
+  font-weight: 200;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+section {
+  min-height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  font-family: AvenirLTStd;
+  font-weight: 200;
+  font-size: 1.75rem;
+}
+*::selection {
+  background: rgba(39, 95, 84, 0.5);
+  text-shadow: none;
+}
+*::-moz-selection {
+  background: rgba(39, 95, 84, 0.5);
+  text-shadow: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover,
+.link :link,
+.link :focus,
+.link :visited {
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'bigNoodleTitling', serif;
+  font-style: oblique;
+  margin-top: 10px;
+}
+.justify-text {
+  text-align: justify;
+}
+.row-pad-text {
+  padding: 50px 0;
+}
+.row-pad-top {
+  padding-top: 60px;
+}
+.row-pad-bottom {
+  padding-bottom: 50px;
+}
+#title {
+  background-color: #60ff36;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-top: 20vh;
+  padding-left: 5vw;
+  -webkit-transition: 1.5s all ease;
+  -moz-transition: 1.5s all ease;
+  -o-transition: 1.5s all ease;
+  transition: 1.5s all ease;
+}
+#title h1 {
+  font-size: 10rem;
+}
+#title h3 {
+  font-size: 3rem;
+}
+#title #titleRecyclo {
+  -webkit-transform: rotate(-27deg);
+  -moz-transform: rotate(-27deg);
+  -o-transform: rotate(-27deg);
+  -ms-transform: rotate(-27deg);
+  transform: rotate(-27deg);
+}
+#title .dlbutton {
+  font-family: 'bigNoodleTitling', serif;
+  font-style: oblique;
+  font-size: 2.5rem;
+  background-color: #64f3d5;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#title .dlbutton:link,
+#title .dlbutton:visited {
+  background-color: #64f3d5;
+  color: white;
+}
+#title .dlbutton:hover,
+#title .dlbutton:active {
+  background-color: #11e0b4;
+}
+#intro {
+  background-color: #64f3d5;
+  z-index: 2;
+  position: relative;
+}
+#intro h2 {
+  font-size: 5rem;
+}
+#paper {
+  background-color: #b1ff9c;
+  background-image: url("../img/paperbackground.png");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  color: black;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+#paper h2 {
+  font-size: 5rem;
+}
+#paper #paperRecyclo {
+  -webkit-transform: rotate(90deg) translateY(100px);
+  -moz-transform: rotate(90deg) translateY(100px);
+  -o-transform: rotate(90deg) translateY(100px);
+  -ms-transform: rotate(90deg) translateY(100px);
+  transform: rotate(90deg) translateY(100px);
+}
+#plastic {
+  background-color: #64f3d5;
+  z-index: 2;
+  position: relative;
+}
+#plastic h2 {
+  font-size: 5rem;
+}
+#glass {
+  background-color: #b1ff9c;
+  background-image: url("../img/beakerbackground.png");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  z-index: 2;
+  position: relative;
+}
+#glass h2 {
+  font-size: 5rem;
+}
+#glass #glassRecyclo {
+  -webkit-transform: rotate(-90deg) translateY(100px);
+  -moz-transform: rotate(-90deg) translateY(100px);
+  -o-transform: rotate(-90deg) translateY(100px);
+  -ms-transform: rotate(-90deg) translateY(100px);
+  transform: rotate(-90deg) translateY(100px);
+}
+#metal {
+  background-color: #64f3d5;
+  z-index: 2;
+  position: relative;
+}
+#metal h2 {
+  font-size: 5rem;
+}
+#other {
+  background-color: #b1ff9c;
+  background-image: url("../img/otherbackground.png");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+}
+#other h2 {
+  font-size: 5rem;
+}
+#other #otherRecyclo {
+  -webkit-transform: rotate(180deg) translateY(300px);
+  -moz-transform: rotate(180deg) translateY(300px);
+  -o-transform: rotate(180deg) translateY(300px);
+  -ms-transform: rotate(180deg) translateY(300px);
+  transform: rotate(180deg) translateY(300px);
+}
+#game {
+  background-color: #64f3d5;
+  z-index: 2;
+  position: relative;
+}
+#game h2 {
+  font-size: 5rem;
+}
+#footer {
+  z-index: 2;
+  position: relative;
+  background-color: #60ff36;
+  text-align: center;
+  padding: 18px 0 10px 0;
+}
+#footer p {
+  padding: 0;
+}
+tr.good {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+tr.bad {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.table-hover > tbody > tr:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.table-hover > tbody > tr:hover.good {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+.table-hover > tbody > tr:hover.bad {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.over-particles {
+  position: absolute;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: #60ff36;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}

@@ -1,0 +1,228 @@
+@import "./variables.less"; // custom variables
+@import "./mixins.less"; // custom mixins
+
+// Global Resets
+html, body {
+	// height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	color: @main-text-color;
+}
+
+section {
+	min-height: 100%;
+	overflow: hidden;
+}
+body {
+	height: 100%;
+	font-family: AvenirLTStd;
+	font-weight: 200;
+	font-size: 1.75rem;
+}
+
+* {
+	// outline: 1px solid red;
+	// overflow: scroll;
+	.textSelection(@select-color);
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+	&:hover, :link, :focus, :visited {
+		color: white;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'bigNoodleTitling', serif;
+	font-style: oblique;
+	margin-top: 10px;
+}
+
+.justify-text {
+	text-align: justify;
+}
+.row-pad-text {
+	padding: 50px 0;
+}
+.row-pad-top {
+	padding-top: 60px;
+}
+.row-pad-bottom {
+	padding-bottom: 50px;
+}
+// Website Sections
+// title
+#title {
+	background-color: @theme-green;
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding-top: 20vh;
+	padding-left: 5vw;
+	.Transitions(1.5s all ease);
+	h1 {
+		// color: @theme-blue;
+		font-size: 10rem;
+	}
+	h3 {
+		font-size: 3rem;
+	}
+
+	.title-pad {
+		// margin-top: 20vh;
+		// margin-left: 5vw;
+	}
+	#titleRecyclo {
+		// display: none;
+		// opacity: 0;
+		.Transform(rotate(-27deg));
+	}
+	.dlbutton {
+		// .Transitions(250ms all ease);
+		font-family: 'bigNoodleTitling', serif;
+		font-style: oblique;
+		font-size: 2.5rem;
+		background-color: @theme-blue;
+	    color: white;
+	    padding: 14px 25px;
+	    text-align: center; 
+	    text-decoration: none;
+	    display: inline-block;
+		&:link, &:visited {
+			background-color: @theme-blue;
+		    color: white;
+		}
+		&:hover, &:active {
+			background-color: darken(@theme-blue, 20%);
+		}
+	}
+}
+#intro {
+	background-color: @theme-blue;
+	h2 {
+		font-size: 5rem;
+	}
+	z-index: 2;
+	position: relative;
+}
+#paper {
+	background-color: @theme-grey;
+	background-image: url("../img/paperbackground.png");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	color: @text-color-dark;
+	background-size: cover;
+	h2 {
+		font-size: 5rem;
+	}
+	#paperRecyclo {
+		.Transform(rotate(90deg) translateY(100px));
+	}
+	z-index: 2;
+	position: relative;
+}
+#plastic {
+	background-color: @theme-blue;
+	h2 {
+		font-size: 5rem;
+	}
+	z-index: 2;
+	position: relative;
+}
+#glass {
+	background-color: @theme-grey;
+	background-image: url("../img/beakerbackground.png");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	color: @text-color-dark;
+	h2 {
+		font-size: 5rem;
+	}
+	#glassRecyclo {
+		.Transform(rotate(-90deg) translateY(100px));
+	}
+	z-index: 2;
+	position: relative;
+}
+#metal {
+	background-color: @theme-blue;
+	h2 {
+		font-size: 5rem;
+	}
+	z-index: 2;
+	position: relative;
+}
+#other {
+	background-color: @theme-grey;
+	background-image: url("../img/otherbackground.png");
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	color: @text-color-dark;
+	h2 {
+		font-size: 5rem;
+	}
+	#otherRecyclo {
+		.Transform(rotate(180deg) translateY(300px));
+	}
+}
+#game {
+	background-color: @theme-blue;
+	z-index: 2;
+	position: relative;
+	h2 {
+		font-size: 5rem;
+	}
+}
+#footer {
+	z-index: 2;
+	position: relative;
+	background-color: @theme-green;
+	text-align: center;
+	padding: 18px 0 10px 0;
+	p {
+		padding: 0;
+	}
+}
+// Bootstrap mods
+tr {
+	&.good {
+		background-color: rgba(0,255,0, 0.5);
+	}
+	&.bad {
+		background-color: rgba(255,0,0, 0.5);	
+	}
+}
+.table-hover>tbody>tr:hover {
+	&.good {
+		background-color: rgba(0,255,0,0.3);	
+	}
+	&.bad {
+		background-color: rgba(255,0,0,0.3);
+	}
+	background-color: rgba(0,0,0,0.3);
+}
+
+// particles.js
+.over-particles {
+	position: absolute;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: #60ff36;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
